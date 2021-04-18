@@ -1813,9 +1813,12 @@ footer {
   perspective: 1000px;
   color: #666666; }
   .about:after {
-    background-image: -webkit-linear-gradient(top, rgb(0 225 255) 0%, transparent 100%);
-    background-image: -moz-linear-gradient(top, rgba(0, 255, 255, 0.8) 0%, transparent 100%);
-    background-image: linear-gradient(top, rgba(0, 255, 255, 0.8) 0%, transparent 100%);
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,255,1) 0%, rgba(9,9,121,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,255,1) 0%, rgba(9,9,121,0) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,255,255,1) 0%, rgba(9,9,121,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#090979",GradientType=1);
+    
     position: absolute;
     display: block;
     width: 100%;
