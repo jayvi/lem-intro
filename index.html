@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>LEM INTRO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<style>
+      @font-face {
+            font-family: matizregular;
+            src: url(fonts/matiz-webfont.woff2) format('woff2'), url(fonts/matiz-webfont.woff) format('woff');
+            font-weight: 400;
+            font-style: normal
+        }
+.btn{
+	border: 4px solid #dc3545;
+    text-shadow: none;
+    font-weight: 900  !important;
+    height: 64px;
+    line-height: 47px;
+    background-color: #ff5656;
+    border-radius: 8px;
+    color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  &:before{
+  	pointer-events: none;
+	  position: absolute;
+	  z-index: -1;
+	  content: '';
+	  top: 100%;
+	  left: 5%;
+	  height: 10px;
+	  width: 90%;
+	  opacity: 0;
+	  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: -webkit-transform, opacity;
+	  transition-property: transform, opacity;
+	  opacity: .4;
+	  -webkit-transform: translateY(6px);
+	  -ms-transform: translateY(6px);
+	  transform: translateY(6px);
+	  -webkit-animation-name: hover-shadow;
+	  animation-name: hover-shadow;
+	  -webkit-animation-duration: 1.5s;
+	  animation-duration: 1.5s;
+	  -webkit-animation-delay: .3s;
+	  animation-delay: .3s;
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  animation-direction: alternate;
+  }
+	&:hover{
+		background-color: #e16e50;
+	}
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+body, #container{
+	background-color: #44c7f3;
+}
+</style>
+</head>
+<body>
+	<div id="alert" style="display: none;background: #fa5556;font-weight: 800;">For best performance use dektop version!</div>
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 100%; height:100vh; -webkit-transform: translate3d(0, 0, 0); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+			<li class="layer" data-depth="0.00" style="position: relative; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0%, 0%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="background"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange b phase-4"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light purple c phase-5"></div></li>
+			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange d phase-3"></div></li>
+			<li class="layer" data-depth="0.15" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.4464285714285717%, -2.234098939929327%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-10">
+          
+					<li class="hanger position-2">
+						<div class="board cloud-2 swing-1"></div>
+					</li>
+					<li class="hanger position-4">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board birds swing-5"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.20" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.5952380952380957%, -2.9787985865724367%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<!-- <h1 class="title">
+					<span>	 <a href="#" class="btn">Discover Lemuria</a></span>
+				</h1> -->
+			</li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.8928571428571433%, -4.468197879858654%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-30">
+          
+					<li class="hanger position-1">
+						<div class="board cloud-1 swing-3"></div>
+					</li>
+					<li class="hanger position-5">
+						<div class="board cloud-4 swing-1"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.8928571428571433%, -4.468197879858654%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-30"></div></li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.1904761904761914%, -5.957597173144873%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-40"></div></li>
+			<li class="layer" data-depth="0.50" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.488095238095239%, -7.4469964664310915%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-50"></div></li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, 7.063604%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="whale depth-60"></div></li>
+			<li class="layer" data-depth="0.90" style="position: absolute;display: block;  height: 100%;width: 100%;left: 0px;top: 0px;-webkit-transform: translate3d(-33.7857142857142867%, -10.936396%, 0px);-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;"><div class="lighthouse depth-60"></div></li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, -8.936395759717309%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
+				<ul class="rope depth-60">
+          <!-- <li><img src="https://wagerfield.github.io/parallax/assets/images/rope.png" alt="Rope"/></li> -->
+					<li class="hanger position-3">
+						<div class="board birds swing-5"></div>
+					</li>
+					<li class="hanger position-6">
+						<div class="board cloud-2 swing-2"></div>
+					</li>
+					<li class="hanger position-8">
+						<div class="board cloud-3 swing-4"></div>
+					</li>
+				</ul>
+			</li>
+			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, -8.936395759717309%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-60"></div></li>
+			<li class="layer" data-depth="0.80" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(2.3809523809523827%, -11.915194346289747%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-80"></div></li>
+			<li class="layer" data-depth="1.00" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(2.976190476190478%, -14.893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-100"></div></li>
+			
+		</ul>
+    <section id="about" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>
+								<img src="./logo_ww.png" style="width: 220px;
+								display: block;
+								margin: 0 auto;"/>
+							</h1>
+						</header>
+						<h3 style="    font-family: matizregular;
+						color: #feffff;
+						text-shadow: 1px 4px 2px black;">
+							Welcome to Lemuria
+
+
+
+						</h3>
+						
+						<div class="social">
+							<a style="    font-weight: 800;text-shadow: 2px 1px 5px black;" href="https://twitter.com/FinanceLemur" target="_blank" class="twitter-follow-button" data-show-count="false"> <i class="fab fa-twitter"></i> <span class="handle"></span></a>
+							<a style="    font-weight: 800;text-shadow: 2px 1px 5px black;" href="https://t.me/lemurfinance" target="_blank" class="twitter-follow-button" data-show-count="false"><i class="fab fa-telegram"></i> <span class="handle"></span></a>
+							<a style="    font-weight: 800;text-shadow: 2px 1px 5px black;" href="https://lemurfinance.medium.com/" target="_blank" class="twitter-follow-button" data-show-count="false"><i class="fab fa-medium"></i> <span class="handle"></span></a>
+							<a style="    font-weight: 800;text-shadow: 2px 1px 5px black;" href="https://www.reddit.com/r/LemurFinance/" target="_blank" class="twitter-follow-button" data-show-count="false"><i class="fab fa-reddit-alien"></i> <span class="handle"></span></a>
+						</div>
+						<div class="links" style="padding: 0 0 2em 0;">
+						<a class="" target="_blank" style="    background: #86b13a;
+								border-radius: 5px;
+								width: 70%;
+								margin-left: 15%;
+								border: 2px solid #2d874d;
+								font-family: matizregular;
+								padding: 0.5em;"  href="https://github.com/wagerfield/parallax">ENTER</a>
+								</div>
+						<!-- <ul class="links" style="    padding-bottom: 1.5em;">
+							<li><a class=""  style="   background: #86b13a;
+								border-radius: 5px;
+								width: 70%;
+								margin-left: 15%;
+								border: 2px solid #2d874d;
+								padding: 0.5em;" href="https://github.com/wagerfield/parallax/archive/master.zip">Story</a></li>
+							<li><a class="" target="_blank" style="    background: #86b13a;
+								border-radius: 5px;
+								width: 70%;
+								margin-left: 15%;
+								border: 2px solid #2d874d;
+								padding: 0.5em;"  href="https://github.com/wagerfield/parallax">Lemuria</a></li>
+							
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</section>
+    <button id="toggle" style="background: #facb4f;" class="toggle i">
+		<img src="./btn.png"/>
+			<div class="cross">
+				
+				<!-- <div class="x"></div>
+				<div class="y"></div> -->
+			</div>			
+		</button>		
+
+	</div>
+	<!-- <div class="jumbotron">
+		<h1 class="display-3">Hello, world!</h1>
+		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<hr class="my-4">
+		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		<p class="lead">
+		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</p>
+	  </div> -->
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+
+  <!-- Scripts -->
+	<script src="./libraries.min.js"></script>
+	<script src="./jquery.parallax.js"></script>
+  <script  src="./script.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$about = $('#about'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				// $toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	function showDetails() {
+		$about.removeClass('hide');
+		$toggle.removeClass('i');
+	}
+
+	function hideDetails() {
+		$about.addClass('hide');
+		$toggle.addClass('i');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('i') ? showDetails() : hideDetails();
+	});
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+
+	</script>
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+
+// more typically we would instantiate with 'window.navigator.userAgent'
+// as user-agent; this string literal is only for better understanding
+var isMobile = md.mobile();
+if(isMobile != null){
+
+$('#alert').show();
+}
+</script>
+</body>
+</html>
